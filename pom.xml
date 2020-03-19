@@ -130,7 +130,7 @@
     <spring.datasource.hikari.connection-test-query-timeout>2000</spring.datasource.hikari.connection-test-query-timeout>
     <spring.datasource.hikari.maximum-pool-size>5</spring.datasource.hikari.maximum-pool-size>
     <spring.datasource.hikari.minimum-idle>1</spring.datasource.hikari.minimum-idle>
-    <spring.datasource.hikari.connection-timeout>5000</spring.datasource.hikari.connection-timeout>
+    <spring.datasource.hikari.connection-timeout>30000</spring.datasource.hikari.connection-timeout>
     <spring.datasource.hikari.register-mbeans>true</spring.datasource.hikari.register-mbeans>
     <spring.datasource.hikari.mbean-name>authDataSource</spring.datasource.hikari.mbean-name>
 
@@ -140,7 +140,7 @@
     <server.ssl.key-store-password></server.ssl.key-store-password>
     <server.ssl.key-password></server.ssl.key-password>
 
-    <arachne.version>1.14.1-alpha2</arachne.version>
+    <arachne.version>1.16.0-SNAPSHOT</arachne.version>
     <jersey-media-multipart.version>2.25.1</jersey-media-multipart.version>
     <execution.invalidation.period>600000</execution.invalidation.period>
     <execution.invalidation.maxage.hours>12</execution.invalidation.maxage.hours>
@@ -495,7 +495,7 @@
     <dependency>
       <groupId>org.ohdsi.sql</groupId>
       <artifactId>SqlRender</artifactId>
-      <version>1.6.3-SNAPSHOT</version>
+      <version>1.6.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>commons-dbutils</groupId>
@@ -521,7 +521,7 @@
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.3.2</version>
+      <version>3.6</version>
     </dependency>
     <dependency>
       <groupId>org.flywaydb</groupId>
@@ -634,7 +634,7 @@
     <dependency>
       <groupId>org.ohdsi</groupId>
       <artifactId>circe</artifactId>
-      <version>1.8.1</version>
+      <version>1.9.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.ohdsi</groupId>
