@@ -553,7 +553,30 @@
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
+			<!-- Force ActiveMQ version to match arachne-scheduler's requirement, -->
+			<!-- overriding Spring Boot 1.5.22.RELEASE's managed 5.14.5 -->
+			<dependency>
+				<groupId>org.apache.activemq</groupId>
+				<artifactId>activemq-broker</artifactId>
+				<version>6.2.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.activemq</groupId>
+				<artifactId>activemq-client</artifactId>
+				<version>6.2.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.activemq</groupId>
+				<artifactId>activemq-kahadb-store</artifactId>
+				<version>6.2.7</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.activemq</groupId>
+				<artifactId>activemq-openwire-legacy</artifactId>
+				<version>6.2.7</version>
+			</dependency>
+
+			<dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-api</artifactId>
         <version>${log4j2.version}</version>
