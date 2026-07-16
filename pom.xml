@@ -25,11 +25,10 @@
     <hydra.version>0.4.0</hydra.version>
     <featureExtraction.version>3.8.0</featureExtraction.version>
     <tomcat.embed.version>8.5.87</tomcat.embed.version>
-    <activemq.version>5.19.5</activemq.version>
 
     <commons-fileupload.version>1.5</commons-fileupload.version>
 
-    <circe.version>1.13.0-1</circe.version>
+		<circe.version>1.13.0-1</circe.version>
     <jersey.version>2.14</jersey.version>
     <SqlRender.version>1.19.1</SqlRender.version>
     <hive-jdbc.version>3.1.2</hive-jdbc.version>
@@ -593,43 +592,6 @@
 				<version>17.6.0</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
-			
-			<!-- Force patched ActiveMQ to mitigate GHSA-rxpj-7qvf-xv32 -->
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-broker</artifactId>
-				<version>${activemq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-client</artifactId>
-				<version>${activemq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-openwire-legacy</artifactId>
-				<version>${activemq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-kahadb-store</artifactId>
-				<version>${activemq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-jms-pool</artifactId>
-				<version>${activemq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-spring</artifactId>
-				<version>${activemq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.activemq</groupId>
-				<artifactId>activemq-pool</artifactId>
-				<version>${activemq.version}</version>
 			</dependency>
     </dependencies>
   </dependencyManagement>
